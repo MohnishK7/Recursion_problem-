@@ -2,8 +2,8 @@
 using namespace std;
 
 int sum(int n) {
-	if (n == 0) return 0;
-	return n + sum(n - 1);
+	if (n == 0) return 0; // n==1 base case for fact
+	return n + sum(n - 1); // for fact use mult operator
 }
 
 int main() {
